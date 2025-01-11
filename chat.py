@@ -8,7 +8,7 @@ os.environ['GROQ_API_KEY'] = api_key
 
 chat = ChatGroq(model='mixtral-8x7b-32768')
 
-def resposta_bot(mensagens):
+def resposta_chat(mensagens):
   mensagem_system = '''Seu nome é ChatZada e eu nao quero que voce seja repetitivo nas suas conversas.'''
                     
   lista_mensagens = [('system', mensagem_system)] 
@@ -18,14 +18,5 @@ def resposta_bot(mensagens):
   return chain.invoke({}).content
 
 
-# mensagens = []
-# while True:
-#   pergunta = input('==> Usuário: ')
-#   if pergunta.lower() == 'x':
-#     break
-  
-#   mensagens.append(('user', pergunta))
-#   resposta = resposta_bot(mensagens)
-#   mensagens.append(('assistant', resposta))
-  
-#   print(f'\n==> Bot: {resposta}\n')
+
+

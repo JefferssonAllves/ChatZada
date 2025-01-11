@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+<h1>Login</h1>
+{% endblock %}
+{% block container %}
+<form class="login" action="" method="post">
+    <label class="label-login" for="nome">Digite seu nome</label>
+    <input class="container-input" type="text" name="nome" id="">
+
+    <label class="label-login" for="email">Digite seu email</label>
+    <input class="container-input" type="email" name="email" id="">
+
+    <label class="label-login" for="senha">Digite sua senha</label>
+    <input class="container-input" type="password" name="senha" id="">
+
+    <button class="botao-login" type="submit">Login</button>
+</form>
+{% endblock %}

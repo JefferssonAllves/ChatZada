@@ -107,7 +107,7 @@ h5{
     padding: 20px;
     box-shadow: 0px 0px 10px #ff0051a2;
     width: 70%;
-    height: 475px;
+    height: 450px;
     border-radius: 10px;
     z-index: 1000;
 }
@@ -207,4 +207,45 @@ footer{
     top: 10px;
     left: -20px;
     align-items: flex-start;
+}
+
+.error{
+    background: #131313;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #ff0051a2;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 1000;
+}
+.error h2{
+    display: grid;
+    position: relative;
+    color: #131313;
+    text-shadow: 0px 0px 15px #ff0051a2;
+    -webkit-text-stroke: 0.5px #ff00aa;
+    display: grid;
+    justify-content: center; 
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+.label-login{
+    color: #fff;
+    font-size: 1.3vh;
+    padding-bottom: 7px;
+}
+
+.botao-login{
+    display: grid;
+    position: relative;
+    margin: 20px;
+    background-color: #00000000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ff0051a2;
+    color: #ffffff00;
+    -webkit-text-stroke: 0.5px #fff;
+    width: 75%;
+    
 }
